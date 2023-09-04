@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/contentFragment">
+
+    <fragment
+        android:id="@+id/textViewFragment"
+        android:name="com.dhikaputra.mentoring_layout.module_4.TextViewFragment"
+        android:label="Text View"
+        tools:layout="@layout/fragment_text_view"/>
+    <fragment
+        android:id="@+id/editTextFragment"
+        android:name="com.dhikaputra.mentoring_layout.module_4.EditTextFragment"
+        android:label="Edit Text"
+        tools:layout="@layout/fragment_edit_text"/>
+    <fragment
+        android:id="@+id/buttonFragment"
+        android:name="com.dhikaputra.mentoring_layout.module_4.ButtonViewFragment"
+        android:label="Button View"
+        tools:layout="@layout/fragment_button"/>
+
+    <fragment
+        android:id="@+id/imageViewFragment"
+        android:name="com.dhikaputra.mentoring_layout.module_4.ImageViewFragment"
+        android:label="Image View"
+        tools:layout="@layout/fragment_image_view"/>
+    <fragment
+        android:id="@+id/contentFragment"
+        android:name="com.dhikaputra.mentoring_layout.ContentFragment"
+        android:label="Content Fragment" >
+        <action
+            android:id="@+id/action_contentFragment_to_textViewFragment"
+            app:destination="@id/textViewFragment" />
+        <action
+            android:id="@+id/action_contentFragment_to_editTextFragment"
+            app:destination="@id/editTextFragment" />
+        <action
+            android:id="@+id/action_contentFragment_to_buttonFragment"
+            app:destination="@id/buttonFragment" />
+        <action
+            android:id="@+id/action_contentFragment_to_imageViewFragment"
+            app:destination="@id/imageViewFragment" />
+    </fragment>
+</navigation>
