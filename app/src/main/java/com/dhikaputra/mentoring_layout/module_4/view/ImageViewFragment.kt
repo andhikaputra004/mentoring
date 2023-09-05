@@ -1,4 +1,4 @@
-package com.dhikaputra.mentoring_layout.module_4
+package com.dhikaputra.mentoring_layout.module_4.view
 
 import android.Manifest
 import android.content.pm.PackageManager

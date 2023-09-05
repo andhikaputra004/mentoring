@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.dhikaputra.mentoring_layout.databinding.ContentFragmentBinding
 
-class ContentFragment: Fragment() {
+class ContentFragment : Fragment() {
 
     private var _binding: ContentFragmentBinding? = null
 
@@ -42,6 +42,21 @@ class ContentFragment: Fragment() {
             }
             imageView.setOnClickListener {
                 findNavController().navigate(R.id.action_contentFragment_to_imageViewFragment)
+            }
+            linearLayout.setOnClickListener {
+                findNavController().navigate(R.id.action_contentFragment_to_linearLayoutFragment)
+            }
+
+            relativeLayout.setOnClickListener {
+                findNavController().navigate(R.id.action_contentFragment_to_relativeLayoutFragment)
+            }
+
+            constraintLayout.setOnClickListener {
+                findNavController().navigate(R.id.action_contentFragment_to_constraintLayoutFragment)
+            }
+
+            frameLayout.setOnClickListener {
+                findNavController().navigate(R.id.action_contentFragment_to_frameLayoutFragment)
             }
         }
     }
