@@ -28,6 +28,7 @@ class ContentFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        val halo = ""
         val oy = "1"
         with(binding) {
             textLabel.setOnClickListener {
