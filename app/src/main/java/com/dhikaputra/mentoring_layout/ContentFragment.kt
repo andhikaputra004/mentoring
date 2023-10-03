@@ -28,7 +28,7 @@ class ContentFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        val oy = "1"
         with(binding) {
             textLabel.setOnClickListener {
                 findNavController().navigate(R.id.action_contentFragment_to_textViewFragment)
